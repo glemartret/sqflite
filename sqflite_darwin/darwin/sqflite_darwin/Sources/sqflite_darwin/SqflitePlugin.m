@@ -798,7 +798,7 @@ static NSInteger _databaseOpenCount = 0;
 #endif
 
     if ([_methodGetPlatformVersion isEqualToString:call.method]) {
-#if TARGET_OS_IPHONE || os(tvOS)
+#if TARGET_OS_IPHONE
         result([@"iOS " stringByAppendingString:[[UIDevice currentDevice] systemVersion]]);
 
 #else
